@@ -90,3 +90,18 @@ body > .nav {
 .social-media {
   margin-top: 20%;
 }
+.description {
+  font-size: 20px;
+  width: 60%;
+  float: left;
+}
+.side-image {
+  width: 35%;
+  margin-left: 5%;
+}
+.image-character {
+  width: 15%;
+}
+.title-bold {
+  font-weight: bold;
+}
