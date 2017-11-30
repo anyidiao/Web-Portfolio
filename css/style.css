@@ -3,6 +3,9 @@
   font-weight: bold;
   font-size: 20px;
 }
+.nav-pills .nav-link:hover {
+  box-shadow: 0 0 0 2px rgba(0, 0, 0, 0.2);
+}
 .nav-pills .nav-link.active {
     color: white;
     background-color: #3E2040;
@@ -20,6 +23,11 @@ body {
 body > .nav {
   margin-top: 2%;
   margin-left: 2%;
+  margin-right: 2%;
+}
+.item-button:hover {
+  box-shadow: 0 0 0 2px rgba(0, 0, 0, 0.2);
+  transform: scale(1.1);
 }
 .container {
   margin-top: 2%;
@@ -43,7 +51,7 @@ body > .nav {
   font-weight: bold;
   padding-bottom: 1%;
 }
-.intro-block-left > div > button {
+.intro-block-left > div button {
   margin-top: 4%;
 }
 .intro-block-right > h2 {
@@ -57,6 +65,9 @@ body > .nav {
   color: white;
   margin-left: 2px;
   margin-right: 2px;
+}
+.list-items > p:hover {
+  transform: scale(1.1);
 }
 .intro-block-right > .list-items {
   margin-left: 5%;
@@ -92,11 +103,11 @@ body > .nav {
 }
 .description {
   font-size: 20px;
-  width: 60%;
+  width: 50%;
   float: left;
 }
 .side-image {
-  width: 35%;
+  width: 40%;
   margin-left: 5%;
 }
 .image-character {
@@ -104,4 +115,7 @@ body > .nav {
 }
 .title-bold {
   font-weight: bold;
+}
+.fa:hover {
+  transform: scale(1.1);
 }
