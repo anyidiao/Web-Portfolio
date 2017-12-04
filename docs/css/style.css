@@ -110,6 +110,9 @@ body > .nav {
   width: 40%;
   margin-left: 5%;
 }
+.pea-img {
+  width: 30px;
+}
 .image-character {
   width: 15%;
 }
@@ -118,4 +121,21 @@ body > .nav {
 }
 .fa:hover {
   transform: scale(1.1);
+}
+.slider.slider-horizontal {
+  margin-bottom: 20%;
+}
+.title-bold {
+  margin-top: 5%;
+}
+#peashooter {
+  transform-origin: 50% 50%;
+  position: relative;
+}
+#peashooter:hover {
+}
+#pea {
+  position: absolute;
+  left: 0;
+  top: 0;
 }

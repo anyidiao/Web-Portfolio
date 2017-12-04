@@ -10,7 +10,7 @@
 
   <link rel="stylesheet" href="css/bootstrap.min.css">
   <link rel="stylesheet" href="css/bootstrap-grid.min.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="css/bootstrap-slider.min.css">
   <link rel="stylesheet" href="css/style.css">
 </head>
 
@@ -22,21 +22,36 @@
   </nav>
   <div class="container">
     <h2 class="title title-bold">Ceiling Fan Control</h2>
-    <div>
-      <h2 class="title-bold">Planning</h2>
-      <div class="description float-left">
+    <input type="hidden" id="project-name" value="ceiling_fan_control"/>
+    <div class="content">
+      <div class="row justify-content-center justify-content-sm-center justify-content-md-center justify-content-lg-center progress">
+        <input id="progress-bar" type="text" class="col-10 col-sm-10 col-md-10 col-lg-10"
+              data-provide="slider"
+              data-slider-ticks="[1, 2, 3, 4]"
+              data-slider-ticks-labels='["Planning", "Competitive analysis", "Iterations", "Final design"]'
+              data-slider-min="1"
+              data-slider-max="4"
+              data-slider-step="1"
+              data-slider-value="1"
+              data-slider-tooltip="hide" />
+      </div>
+      <h2 class="title-bold" id="subtitle">Planning</h2>
+      <div class="description float-left" id="content-text">
         <p>I noticed the ceiling fan control in my apartment is a bad design. It provides poor feedforward and feedback.</p>
         <p>The two pull strings (one for light, another for fan) look exactly the same, which often results in the user
           pulling the wrong string.</p>
-        <p>When the user wants to turn off the fan from ‘High’ mode, it is hard to tell 
+        <p>When the user wants to turn off the fan from ‘High’ mode, it is hard to tell
           immediately whether the fan is slowing down to ‘Medium’ mode or turning off by looking at its speed.
           The pull string doesn’t indicate its current mode either, which often makes the user doubt whether he/she made the right action.</p>
       </div>
-      <img class="side-image" src="images/ceiling_fan.jpeg" alt="Ceiling fan"></img>
+      <img class="side-image" id="image" src="images/ceiling_fan.jpeg" alt="Ceiling fan"></img>
     </div>
   </div>
   <script src="js/popper.min.js"></script>
   <script src="js/jquery-3.2.1.min.js"></script>
   <script src="js/bootstrap.min.js"></script>
+  <script src="js/bootstrap-slider.min.js"></script>
+  <script src="js/data.js"></script>
+  <script src="js/main.js"></script>
 </body>
 </html>
